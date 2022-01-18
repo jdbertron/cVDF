@@ -69,7 +69,7 @@ def verify_proof(xi, yi, π, τ, δ):
 
 
 if __name__ == '__main__':
-    print('This illustrates the Pietrzak VDF')
+    print('This illustrates the Pietrzak VDF unoptimized proving.')
     # primes.rwh_primes1(123456789123456789)
     # Pick two of them.
     p = 123456211
@@ -104,7 +104,7 @@ if __name__ == '__main__':
     s = 3
     print("Delta: δ:{}".format(δ))
     y, π = basic_proof(N, x, τ, δ, s)
-    print("Finished y in ", round(((time.time() * 1000) - start_t), 2), "ms")
+    print("Finished total calc+proof in ", round(((time.time() * 1000) - start_t), 2), "ms")
     # Output the proof
     print("Result:", y)
     # Should π=[μi] have Log2(T) elements minus the delta optimization.

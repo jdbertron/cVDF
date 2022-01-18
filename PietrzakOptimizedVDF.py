@@ -162,7 +162,7 @@ def verify_proof(xi, yi, π, τ, δ):
 
 
 if __name__ == '__main__':
-    print('This illustrates the Pietrzak VDF')
+    print('This illustrates the Pietrzak Optimized VDF')
     # primes.rwh_primes1(123456789123456789)
     # Pick two of them.
     p = 123456211

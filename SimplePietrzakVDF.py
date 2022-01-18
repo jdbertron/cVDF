@@ -13,7 +13,7 @@ def generate_r_value(x, y, μ, int_size_bits=1024):
     return int.from_bytes(b[:16], "big")
 
 if __name__ == '__main__':
-    print('This illustrates the Pietrzak VDF')
+    print('This illustrates the Pietrzak VDF no proving')
     # primes.rwh_primes1(123456789123456789)
     # Pick two of them.
     # p = 1993,q = 2027
